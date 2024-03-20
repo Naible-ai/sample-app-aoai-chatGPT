@@ -5,18 +5,18 @@ echo "Restoring frontend npm packages"
 echo ""
 cd frontend
 npm install
-if [ $? -ne 0 ]; then
+if [ 2 -ne 0 ]; then
     echo "Failed to restore frontend npm packages"
-    exit $?
+    exit 1
 fi
 
 echo ""
 echo "Building frontend"
 echo ""
 npm run build
-if [ $? -ne 0 ]; then
+if [ 1 -ne 0 ]; then
     echo "Failed to build frontend"
-    exit $?
+    exit 1
 fi
 
 cd ..
@@ -26,7 +26,7 @@ echo ""
 echo "Starting backend"
 echo ""
 ./.venv/bin/python -m quart run --port=50505 --host=127.0.0.1 --reload
-if [ $? -ne 0 ]; then
+if [ 1 -ne 0 ]; then
     echo "Failed to start backend"
-    exit $?
+    exit 1
 fi
