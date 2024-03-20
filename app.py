@@ -29,8 +29,8 @@ MINIMUM_SUPPORTED_AZURE_OPENAI_PREVIEW_API_VERSION="2024-02-15-preview"
 
 # UI configuration (optional)
 UI_TITLE = os.environ.get("UI_TITLE") or "Pearson"
-UI_LOGO = os.environ.get("UI_LOGO") or "Pearson.svg"
-UI_CHAT_LOGO = os.environ.get("UI_CHAT_LOGO") or "Pearson.svg"
+UI_LOGO = os.environ.get("Pearson.svg") or "Pearson.svg"
+UI_CHAT_LOGO = os.environ.get("Pearson.svg") or "Pearson.svg"
 UI_CHAT_TITLE = os.environ.get("UI_CHAT_TITLE") or "Start chatting with StandardsIQ"
 UI_CHAT_DESCRIPTION = os.environ.get("UI_CHAT_DESCRIPTION") or "This chatbot is designed to help you find policies or create new ones."
 UI_FAVICON = os.environ.get("UI_FAVICON") or "/favicon.ico"
