@@ -29,10 +29,10 @@ MINIMUM_SUPPORTED_AZURE_OPENAI_PREVIEW_API_VERSION="2024-02-15-preview"
 
 # UI configuration (optional)
 UI_TITLE = os.environ.get("UI_TITLE") or "Pearson"
-UI_LOGO = os.environ.get("UI_LOGO")
-UI_CHAT_LOGO = os.environ.get("UI_CHAT_LOGO")
-UI_CHAT_TITLE = os.environ.get("UI_CHAT_TITLE") or "Start chatting"
-UI_CHAT_DESCRIPTION = os.environ.get("UI_CHAT_DESCRIPTION") or "This chatbot is configured to answer your questions"
+UI_LOGO = os.environ.get("UI_LOGO") or "Pearson.svg"
+UI_CHAT_LOGO = os.environ.get("UI_CHAT_LOGO") or "Pearson.svg"
+UI_CHAT_TITLE = os.environ.get("UI_CHAT_TITLE") or "Start chatting with StandardsIQ"
+UI_CHAT_DESCRIPTION = os.environ.get("UI_CHAT_DESCRIPTION") or "This chatbot is designed to help you find policies or create new ones."
 UI_FAVICON = os.environ.get("UI_FAVICON") or "/favicon.ico"
 UI_SHOW_SHARE_BUTTON = os.environ.get("UI_SHOW_SHARE_BUTTON", "true").lower() == "true"
 
@@ -66,7 +66,7 @@ USER_AGENT = "GitHubSampleWebApp/AsyncAzureOpenAI/1.0.0"
 
 # On Your Data Settings
 DATASOURCE_TYPE = os.environ.get("DATASOURCE_TYPE", "AzureCognitiveSearch")
-SEARCH_TOP_K = os.environ.get("SEARCH_TOP_K", 5)
+SEARCH_TOP_K = os.environ.get("SEARCH_TOP_K", 20)
 SEARCH_STRICTNESS = os.environ.get("SEARCH_STRICTNESS", 3)
 SEARCH_ENABLE_IN_DOMAIN = os.environ.get("SEARCH_ENABLE_IN_DOMAIN", "true")
 
